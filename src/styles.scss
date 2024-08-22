@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/styles/variables';
+@import 'ngx-toastr/toastr';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: $grey-color;
+}
+
+p {
+    color: $grey-color;
+}
+
+.btn-primary {
+    // Here I use important to rewrite bootstrap css class
+    background-color: $secondary-color !important;
+    border-radius: 2px;
+    width: 140px;
+
+    &:hover {
+        background-color: darken($secondary-color, 5%) !important;
+    }
+
+
+}

@@ -1,0 +1,65 @@
+@import '../../../assets/styles/variables';
+
+.about-container {
+  background-color: #20202e;
+  padding: 50px 300px 50px 300px
+}
+
+.vertical-line {
+  position: absolute;
+  left: 250px;
+  margin-top: 8px;
+  width: 3px;
+  height: 100px;
+  background-color: $secondary-color;
+}
+
+.color-text {
+  color: $secondary-color
+}
+
+.btn {
+  &-wrapper {
+    display: flex;
+    justify-content: end;
+    height: 37px;
+  }
+}
+
+.table-dark {
+  --bs-table-bg: $primary-color;
+}
+
+@media (max-width: 1200px) {
+  .about-container {
+    padding: 50px 180px 50px 180px;
+  }
+
+  .vertical-line {
+    left: 140px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    padding: 50px 100px 50px 100px;
+  }
+
+  .vertical-line {
+    left: 80px;
+  }
+}
+
+@media (max-width: 680px) {
+  .about-container {
+    padding: 50px 100px 50px 100px;
+  }
+
+  .vertical-line {
+    left: 40px;
+  }
+
+  .btn-wrapper {
+    height: 63px;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../../assets/styles/variables';
+
+.navbar {
+  background-color: darken($primary-color, 2%);
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+.nav-link.active {
+  color: #4c4cff !important;
+}

@@ -1,0 +1,72 @@
+@import '../../../assets/styles/variables';
+
+.contact-container {
+  background-color: $lighter-background;
+  padding: 50px 250px 50px 250px;
+}
+
+.form-section {
+  background-color: $lighter-background;
+  padding: 30px;
+  border-radius: 2px;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  background-color: $input-color;
+  border: none;
+  border-radius: 2px;
+  color: white;
+
+  &:focus {
+    background-color: $lighter-background;
+    border: 1px solid #555;
+    box-shadow: none;
+  }
+}
+
+.form-control::placeholder {
+  color: #777;
+}
+
+.info-section {
+  color: white;
+  padding-left: 50px;
+}
+
+.info-section h2 {
+  font-size: 1.75rem;
+}
+
+.info-section p a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.info-section p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .info-section {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-container {
+    padding: 50px 180px 50px 180px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-container {
+    padding: 50px 100px 50px 100px;
+  }
+}
+
+@media (max-width: 680px) {
+  .contact-container {
+    padding: 50px 100px 50px 100px;
+  }
+}
